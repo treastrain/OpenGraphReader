@@ -1,6 +1,10 @@
 import Foundation
 import SwiftSoup
 
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
+
 /// Represents errors that can occur during OpenGraph operations.
 public enum OpenGraphError: Error {
     case invalidURL

@@ -1,5 +1,10 @@
 import XCTest
 import Foundation
+
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
+
 @testable import OpenGraphReader
 
 final class OpenGraphReaderTests: XCTestCase {
